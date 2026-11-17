@@ -1,0 +1,31 @@
+# Permisos para motores de búsqueda tradicionales (Google, Bing, Yahoo)
+User-agent: *
+Allow: /
+
+# Permisos específicos para rastreadores de Inteligencia Artificial (GEO / AIO)
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Archivo de mapa del sitio (Sitemap)
+Sitemap: https://tlovric-global-consulting.netlify.app/sitemap.xml
