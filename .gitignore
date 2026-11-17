@@ -1,0 +1,8 @@
+# Archivos temporales y borradores de Office
+*.docx
+logo.png.jpeg
+
+# Dependencias y servidor local
+node_modules/
+.DS_Store
+Thumbs.db
