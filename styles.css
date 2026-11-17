@@ -1,0 +1,750 @@
+/* ===================================================================
+   VARIABLES GLOBALES (Extraídas de diseño.md y Logotipo Oficial)
+=================================================================== */
+:root {
+  --bg-main: #0A0D14;
+  --bg-surface: #111624;
+  --bg-surface-hover: #161D2F;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-highlight: rgba(255, 255, 255, 0.16);
+  --accent-green: #10B981;  /* Sostenibilidad y Visado Verde */
+  --accent-blue: #2563EB;   /* Legal & Institucional */
+  --accent-amber: #F59E0B;  /* Pasaporte ESG & Monetización */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ===================================================================
+   RESET & ESTILOS BASE
+=================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===================================================================
+   HEADER & NAVEGACIÓN
+=================================================================== */
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(10, 13, 20, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 100;
+  padding: 14px 0;
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.logo-img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-text {
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.brand-text span {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent-green);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+}
+
+.nav-link.highlight-link {
+  color: var(--accent-amber);
+}
+
+/* Selector de Idioma */
+.lang-switch-wrapper {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  border-radius: 9999px;
+  padding: 3px 8px;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.lang-btn.active {
+  color: var(--accent-green);
+  background: rgba(16, 185, 129, 0.15);
+}
+
+.lang-divider {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.75rem;
+  margin: 0 2px;
+}
+
+.btn-cta-header {
+  background-color: var(--accent-green);
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.25);
+}
+
+.btn-cta-header:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-toggle span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--text-primary);
+  transition: var(--transition);
+}
+
+/* ===================================================================
+   HERO SECTION
+=================================================================== */
+.hero-section {
+  position: relative;
+  padding: 100px 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 20%, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+}
+
+.hero-content {
+  width: 90%;
+  max-width: 900px;
+  position: relative;
+  z-index: 2;
+}
+
+.badge-hero {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: var(--accent-green);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  margin-bottom: 24px;
+}
+
+.hero-title {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #10B981, #2563EB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 780px;
+  margin: 0 auto 36px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background-color: var(--accent-amber);
+  color: #000000;
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: #D97706;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ===================================================================
+   SECCIONES COMUNES
+=================================================================== */
+.section {
+  padding: 90px 0;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.section-tag {
+  color: var(--accent-green);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+
+.section-description {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+/* ===================================================================
+   ZONA DE MONETIZACIÓN DIRECTA (2 TARJETAS)
+=================================================================== */
+.monetization-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.card-monetization {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: var(--transition);
+}
+
+.card-green:hover {
+  border-color: var(--accent-green);
+  box-shadow: 0 12px 36px rgba(16, 185, 129, 0.15);
+  transform: translateY(-4px);
+}
+
+.card-amber:hover {
+  border-color: var(--accent-amber);
+  box-shadow: 0 12px 36px rgba(245, 158, 11, 0.15);
+  transform: translateY(-4px);
+}
+
+.card-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.green-badge {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--accent-green);
+}
+
+.amber-badge {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--accent-amber);
+}
+
+.card-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.card-text {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+}
+
+.card-features {
+  list-style: none;
+  margin-bottom: 32px;
+  flex-grow: 1;
+}
+
+.card-features li {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.btn-card-green {
+  background-color: var(--accent-green);
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-card-green:hover {
+  background-color: #059669;
+}
+
+.btn-card-amber {
+  background-color: var(--accent-amber);
+  color: #000000;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-card-amber:hover {
+  background-color: #D97706;
+}
+
+/* ===================================================================
+   ÁREAS DE PRÁCTICA (3 TARJETAS)
+=================================================================== */
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.practice-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 32px;
+  transition: var(--transition);
+}
+
+.practice-card:hover {
+  background: var(--bg-surface-hover);
+  border-color: var(--border-highlight);
+  transform: translateY(-3px);
+}
+
+.practice-icon {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+}
+
+.practice-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.practice-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* ===================================================================
+   CREDENCIALES Y ESTADÍSTICAS
+=================================================================== */
+.authority-wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.authority-title {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.authority-text {
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+}
+
+.credentials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.credential-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.check-icon {
+  color: var(--accent-green);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.credential-item strong {
+  font-size: 0.95rem;
+  display: block;
+}
+
+.credential-item p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.stat-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--accent-green);
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* ===================================================================
+   ACORDEÓN FAQ
+=================================================================== */
+.faq-container {
+  max-width: 800px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.accordion-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-icon {
+  font-size: 1.3rem;
+  color: var(--accent-green);
+  transition: transform 0.3s ease;
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-body p {
+  padding: 0 24px 20px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.accordion-body a {
+  color: var(--accent-amber);
+  text-decoration: underline;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-item.active .accordion-body {
+  max-height: 250px;
+}
+
+/* ===================================================================
+   FOOTER
+=================================================================== */
+.footer-corporate {
+  background: #06080D;
+  border-top: 1px solid var(--border-color);
+  padding: 70px 0 30px;
+  color: var(--text-secondary);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footer-title {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.footer-slogan {
+  color: var(--accent-green);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.footer-bio {
+  font-size: 0.85rem;
+  max-width: 380px;
+}
+
+.footer-links h4, .footer-contact h4 {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a, .footer-contact a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: var(--transition);
+}
+
+.footer-links a:hover, .footer-contact a:hover {
+  color: var(--text-primary);
+}
+
+.footer-contact p {
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border-color);
+  padding-top: 24px;
+  font-size: 0.8rem;
+}
+
+.footer-bottom-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-legal a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+/* ===================================================================
+   BOTÓN FLOTANTE WHATSAPP
+=================================================================== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 58px;
+  height: 58px;
+  background-color: #25D366;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  transition: var(--transition);
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.6);
+}
+
+/* ===================================================================
+   RESPONSIVE DESIGN (MÓVILES Y TABLETAS)
+=================================================================== */
+@media (max-width: 900px) {
+  .authority-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--bg-main);
+    flex-direction: column;
+    padding: 30px 20px;
+    border-bottom: 1px solid var(--border-color);
+    transform: translateY(-150%);
+    transition: var(--transition);
+    gap: 16px;
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .footer-bottom-flex {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
