@@ -28,4 +28,4 @@ User-agent: meta-externalagent
 Allow: /
 
 # Archivo de mapa del sitio (Sitemap)
-Sitemap: https://tlovric-global-consulting.netlify.app/sitemap.xml
+Sitemap: https://terranova-global-solutions.vercel.app/sitemap.xml

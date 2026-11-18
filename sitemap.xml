@@ -4,43 +4,43 @@
 
   <!-- Página principal bilingüe con anotaciones hreflang -->
   <url>
-    <loc>https://tlovric-global-consulting.netlify.app/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://terranova-global-solutions.vercel.app/</loc>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://tlovric-global-consulting.netlify.app/?lang=es" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://tlovric-global-consulting.netlify.app/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tlovric-global-consulting.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://terranova-global-solutions.vercel.app/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://terranova-global-solutions.vercel.app/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://terranova-global-solutions.vercel.app/" />
   </url>
 
-  <!-- Enlace de anclaje prioritario: Plataformas y Soluciones de Monetización -->
+  <!-- Enlace de anclaje prioritario: Plataformas y Soluciones Activas del Ecosistema Terranova -->
   <url>
-    <loc>https://tlovric-global-consulting.netlify.app/#soluciones</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://terranova-global-solutions.vercel.app/#soluciones</loc>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Enlace de anclaje: Áreas de Consultoría Estratégica -->
   <url>
-    <loc>https://tlovric-global-consulting.netlify.app/#areas</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://terranova-global-solutions.vercel.app/#areas</loc>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Enlace de anclaje: Credenciales y Trayectoria Ejecutiva -->
   <url>
-    <loc>https://tlovric-global-consulting.netlify.app/#credenciales</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://terranova-global-solutions.vercel.app/#credenciales</loc>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Enlace de anclaje: Preguntas Frecuentes (FAQ) -->
   <url>
-    <loc>https://tlovric-global-consulting.netlify.app/#faq</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://terranova-global-solutions.vercel.app/#faq</loc>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -1,26 +1,25 @@
-# GUÍA DE ESTILO VISUAL: Tatiana Lovric Global Consulting (diseño.md)
+# GUÍA DE ESTILO VISUAL: Terranova Global Solutions (diseño.md)
 
 ## 1. Identidad y Filosofía Visual
-- **Marca:** Tatiana Lovric Global Consulting.
+- **Marca:** Terranova Global Solutions.
 - **Slogan:** "Where Law, Strategy & Global Vision Converge".
-- **Estética:** Consultoría ejecutiva boutique internacional. Fondo oscuro premium (*executive dark theme*), contrastes nítidos, acabados sutiles en vidrio (*glassmorphism*) y alta legibilidad.
+- **Liderazgo Ejecutivo:** Tatiana Lovric (Socia Directora / Lead Counsel, Abogada y Auditora Senior ISO 14001/HSEQ).
+- **Estética:** Consultoría ejecutiva boutique internacional y ecosistema tecnológico. Fondo azul noche profundo corporativo (*executive deep dark theme*), contrastes nítidos de oro pulido y filamentos cian, acabados en vidrio templado (*glassmorphism*) y alta legibilidad.
 
-## 2. Paleta de Colores Corporativa (Extraída del Logotipo Oficial)
-- **Fondo Principal:** `#0A0D14` (Negro asfalto institucional).
-- **Fondo de Tarjetas / Superficies:** `#111624` con bordes sutiles en `rgba(255, 255, 255, 0.08)`.
-- **Acentos Oficiales de Marca:**
-  - **Verde Esmeralda (Sostenibilidad / Visado Verde):** `#10B981` (Conversión y credenciales ambientales).
-  - **Azul Corporativo (Legal & Compliance):** `#2563EB` (Enlaces estratégicos e institucional).
-  - **Ámbar / Dorado (Pasaporte ESG / Monetización):** `#F59E0B` (Distintivo de alto valor y planes activos).
-- **Texto Principal:** `#F8FAFC` (Blanco puro para titulares).
-- **Texto Secundario:** `#94A3B8` (Gris slate para descripciones y credenciales).
+## 2. Paleta de Colores Corporativa (Sincronizada con el Logotipo Oficial)
+- **Fondo Principal:** `#0A0D18` (Azul noche profundo corporativo).
+- **Superficies de Tarjetas y Header:** `#111728` con bordes sutiles en vidrio templado `rgba(255, 255, 255, 0.08)`.
+- **Color de Acento Primario (Oro Pulido / Prestigio):**
+  - `#D4AF37` y `#F59E0B` para botones principales de acción (CTA), badges destacados y métricas.
+- **Color de Acento Tecnológico (Cian / Turquesa Brillante):**
+  - `#00F2FE` y `#10B981` para la tarjeta de Visado Verde, isotipos y gradientes de texto.
+- **Tipografía Oficial:**
+  - **Texto Principal:** `#F8FAFC` (Blanco platino para titulares).
+  - **Texto Secundario:** `#94A3B8` (Gris frío para descripciones y credenciales).
 
-## 3. Reglas Estrictas de Maquetación (Regla del "Must Test")
-- **Legibilidad y Contraste:** SIEMPRE que se use un degradado o video de fondo abstracto, DEBE aplicarse una capa oscura (`linear-gradient`) para garantizar que la propuesta de valor y los títulos se lean con total nitidez.
-- **Jerarquía de las 2 Soluciones Monetizables:**
-  - La tarjeta de **Visado de Impacto Verde** DEBE tener un distintivo verde esmeralda (`#10B981`) y enlace directo funcional a `https://visado-impacto-verde.onrender.com`.
-  - La tarjeta de **Pasaporte ESG** DEBE tener un distintivo ámbar/dorado (`#F59E0B`), etiqueta de *"Planes y Tarifas Activas"* y enlace directo a `https://pasaporte-sostenibilidad.onrender.com/#/planes`.
-- **Diseño Adaptable (Mobile-First):**
-  - SIEMPRE apilar verticalmente las tarjetas de servicios y enlaces en pantallas móviles (menos de 768px).
-  - El menú superior DEBE colapsar en un menú hamburguesa funcional sin desplazamiento horizontal indeseado (`overflow-x: hidden`).
-- **Botones y Acciones:** NUNCA usar botones grises o apagados; las llamadas a la acción principales deben resaltar con el verde esmeralda (`#10B981`) o ámbar (`#F59E0B`) con efecto hover visible.
+## 3. Reglas Estrictas de Maquetación
+- **Legibilidad y Contraste:** Capas de vidrio templado translúcido con desenfoque de fondo (`backdrop-filter: blur(14px)`) para garantizar una lectura nítida sobre fondos oscuros.
+- **Jerarquía de las 2 Soluciones del Ecosistema Terranova:**
+  - **Visado de Impacto Verde:** Acento cian tecnológico (`#00F2FE`) y esmeralda (`#10B981`) con enlace a `https://visado-impacto-verde.onrender.com`.
+  - **Pasaporte ESG:** Acento de oro pulido (`#D4AF37` y `#F59E0B`) con etiqueta *"Plataforma Activa · Desarrollada por Terranova"* y enlace a `https://pasaporte-sostenibilidad.onrender.com/#/planes`.
+- **Diseño Adaptable (Mobile-First):** Apilamiento vertical en móviles (<768px), menú hamburguesa fluido y sin scroll horizontal indeseado (`overflow-x: hidden`).

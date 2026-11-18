@@ -1,6 +1,8 @@
 # Archivos temporales y borradores de Office
 *.docx
 logo.png.jpeg
+Gemini_Generated_Image_*.jpeg
+*.jpeg
 
 # Dependencias y servidor local
 node_modules/
